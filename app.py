@@ -13,7 +13,7 @@ st.markdown("基于实时数据，AI 智能生成运营洞察与策略建议。"
 df = pd.read_csv("products.csv")
 with open("faq.txt", "r", encoding="utf-8") as f:
 # ================= 风险监控预警模块 =================
-st.subheader("🚨 双十一价格与库存监控预警")
+  st.subheader("🚨 双十一价格与库存监控预警")
 
 # 1. 定义风险判断规则
 df["是否破价"] = df["活动价"] > df["价格"]  # 活动价高于日常价，属于违规
