@@ -86,7 +86,7 @@ if prompt := st.chat_input("请输入商家的问题，例如：双十一流量�
             
             # 调用 DeepSeek
             # 替换原来的 DEEPSEEK_API_KEY = "sk-xxx"
-DEEPSEEK_API_KEY = st.secrets["DEEPSEEK_API_KEY"] # 记得换！
+            DEEPSEEK_API_KEY = st.secrets["DEEPSEEK_API_KEY"] # 记得换！
             url = "https://api.deepseek.com/chat/completions"
             headers = {
                 "Content-Type": "application/json",
@@ -131,7 +131,7 @@ if st.button("🚀 一键生成今日运营日报"):
         
         # 调用 DeepSeek (换成你自己的 Key)
        # 替换原来的 DEEPSEEK_API_KEY = "sk-xxx"
-DEEPSEEK_API_KEY = st.secrets["DEEPSEEK_API_KEY"] 
+        DEEPSEEK_API_KEY = st.secrets["DEEPSEEK_API_KEY"] 
         url = "https://api.deepseek.com/chat/completions"
         headers = {
             "Content-Type": "application/json",
