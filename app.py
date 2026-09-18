@@ -11,6 +11,7 @@ st.markdown("基于实时数据，AI 智能生成运营洞察与策略建议。"
 
 # 读取数据 (注意路径，因为 app.py 在根目录，所以是 data/products.csv)
 df = pd.read_csv("products.csv")
+with open("faq.txt", "r", encoding="utf-8") as f:
 # ================= 风险监控预警模块 =================
 st.subheader("🚨 双十一价格与库存监控预警")
 
